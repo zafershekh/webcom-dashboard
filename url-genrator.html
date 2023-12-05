@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Webcom Dashboard</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/stylenew.css">
+	<script src="js/jquery-3.7.0.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+		<style>
+			#dashboard-sec{
+				overflow: hidden;
+			}
+			#bulkURLGEN{
+				position: relative;
+				top:30px;
+				left: 100px;
+				display: none;
+			}
+			.div_textbox_design{
+				position: relative;
+				top:-238px;
+				left: 550px;
+				width: 400px;
+				height: 200px;
+				overflow-x: auto;
+			}
+	
+		</style>
+
+</head>
+
+<body>
+	<div id="header">URL Generator</div>
+	<div id="nav">
+		<a href="index.html" title="Dashboard">
+			<span class="material-symbols-outlined" class="dash-lock">
+				home
+			</span></a>
+		<a href="about.html" title="About Us">
+			<span class="material-symbols-outlined">
+				person_search
+			</span></a>
+	</div>
+
+	<div id="dashboard-sec">
+
+		<select name="url-devlop" id="url-devlop" class="dropdownselectiontop">
+			<option value="section1">Using Pagetype and Pagename</option>
+			<option value="bulkURLGEN">Bluk Using Desktop URL</option>
+		</select>
+
+		<!-- 1st section starts here -->
+
+		<div id="section1" class="group">
+
+			<div class="main_contener" style="padding-left:300px;">
+				<span class="textbox_title">Page Type</span>
+				<input type="text" id="pagetypedetails" class="textbox_design" placeholder="Enter Page Type Here..." />
+			</div>
+			<div class="main_contener">
+				<span class="textbox_title">Page data</span>
+				<input type="text" id="pagedatadetails" class="textbox_design" placeholder="Enter Page Data Here..." />
+				<input type="button" class="designbtn" value="Submit" id="geturlbydata">
+			</div>
+
+			<!-- result section starts here -->
+
+			<div id="result-url" class="result-box-center">
+				Result....
+			</div>
+
+			<!-- result section ends here -->
+
+		</div>
+
+		<!-- 1st section ends here -->
+
+		<!-- 2nd section starts here -->
+		<!-- <image src="image/comingsoon.png" class="group" id="error_page" /> -->
+
+		<div class="group" id="bulkURLGEN">
+
+			<span class="textbox_title">Enter Desktop URL</span>
+			<textarea class="textarea_design" id="deskurldata" style="width: 400px; height: 200px;"></textarea>
+			<input type="button" id="bulkgeturl" class="designbtn" style="position: relative; top:-100px; left: 14px;" value="Get URL">
+			<span class="textbox_title" style="position: relative; top:-237px; left: 555px; ">URL Result</span>
+			<div class="div_textbox_design" id="bulkurlresult"></div>
+
+
+
+		</div>
+
+
+
+
+	</div>
+
+	<!-- 2nd section ends here -->
+
+
+
+
+
+	</div>
+
+	<div id="footer"></div>
+</body>
+
+</html>

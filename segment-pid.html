@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Webcom Dashboard</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/stylenew.css">
+	<script src="js/jquery-3.7.0.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+	<div id="header">Segmentated Pids Generator</div>
+	<div id="nav">
+		<a href="index.html" title="Dashboard">
+			<span class="material-symbols-outlined" class="dash-lock">
+				home
+			</span></a>
+		<a href="about.html" title="About Us">
+			<span class="material-symbols-outlined">
+				person_search
+			</span></a>
+	</div>
+
+	<div id="dashboard-sec">
+
+		<div id="contener_segment">
+			<div class="main_contener">
+				<span class="textbox_title">Product ID's</span>
+				<textarea id="pidvalue" style="font-size:15px; width:300px; height:310px;" class="textarea_design"
+					placeholder="Enter Pids...."></textarea>
+			</div>
+			<div class="main_contener">
+				<span class="textbox_title">Segmention Value</span>
+				<input type="text" id="segmentvalue" style="font-size:15px;" class="textbox_design"
+					placeholder="Enter Segment....">
+				<input type="button" id="btn" class="designbtn" value="Get Json">
+			</div>
+
+			<div id="segmentpidresult" class="resultshow"></div>
+		</div>
+
+
+	</div>
+
+	<div id="footer"></div>
+</body>
+
+</html>

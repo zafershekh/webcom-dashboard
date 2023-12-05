@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Webcom Dashboard</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/stylenew.css">
+	<script src="js/jquery-3.7.0.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+	<div id="header">Mark My Calendar URL Genrator</div>
+	<div id="nav">
+		<a href="index.html" title="Dashboard">
+			<span class="material-symbols-outlined" class="dash-lock">
+				home
+			</span></a>
+		<a href="about.html" title="About Us">
+			<span class="material-symbols-outlined">
+				person_search
+			</span></a>
+	</div>
+
+	<div id="dashboard-sec">
+
+		<div class="main_contener" style="padding-left: 200px;;">
+			<span class="textbox_title">Enter Event Title</span>
+			<input type="text" id="mmctitle" class="textbox_design" style="width: 300px;">
+			<span class="textbox_title">Enter Event Discription</span>
+			<textarea class="textarea_design" id="mmcdesc" style="width: 300px;"></textarea>
+		</div>
+		<div class="fixed_contener">
+			<span class="textbox_title">Pick Start date and Time</span>
+			<input type="datetime-local" id="mmcstartdate" style="width: 300px;" class="textbox_design">
+			<span class="textbox_title">Pick End date and Time</span>
+			<input type="datetime-local" id="mmcenddate" style="width: 300px;" class="textbox_design">
+		</div>
+		<div class="fixed_contener" style="position:absolute; top:180px;">
+			<input type="button" id="getmmcurl" value="Get URL" class="designbtn">
+		</div>
+	
+		<div class="fixed_contener" id="showappurl" style="top:290px; left: 200px; display:none;">
+			<span class="textbox_title">App URL</span>
+			<div id="mmcappurlresult" class="div_textbox_design" style="width: 300px; white-space: nowrap; overflow-x:scroll;"></div>
+		</div>
+		<div class="fixed_contener" id="showdeskurl" style="top:290px; display:none;">
+			<span class="textbox_title">Desktop URL</span>
+			<div id="mmcurldesktopresult" class="div_textbox_design" style="width: 300px; white-space: nowrap; overflow-x:scroll;"></div>
+	
+		</div>
+	</div>
+<!-- <script>
+$(document).ready(function(){
+
+	// Function to format date and time as required by Google Calendar
+	function formatDateTime(date) {
+        return date.toISOString().replace(/-|:|\.\d+/g, '');
+    }
+	
+	$("#getmmcurl").on("click", function(){
+		$("#showappurl").show();
+		$("#showdeskurl").show();
+		var getmmctitle = document.getElementById("mmctitle").value;
+		var getmmcdesc = document.getElementById("mmcdesc").value;
+		var getmmcdate1 = document.getElementById("mmcstartdate").value;
+		var getmmcdate2 = document.getElementById("mmcenddate").value;
+		
+
+		if(getmmctitle != "" && getmmcdesc != "" && getmmcdate1 != "" && getmmcdate2!= ""){
+		//desktop Code
+			var userstartDate = new Date(getmmcdate1);
+			var userendDate = new Date(getmmcdate2);
+			var googleCalendarBaseUrl = 'https://www.google.com/calendar/render?action=TEMPLATE';
+			var eventUrl = googleCalendarBaseUrl + '&text=' + encodeURIComponent(getmmctitle) +
+            '&details=' + encodeURIComponent(getmmcdesc) +
+            '&dates=' +
+            formatDateTime(userstartDate) + '/' +
+            formatDateTime(userendDate);
+
+			document.getElementById("mmcurldesktopresult").innerHTML = eventUrl;
+
+
+		//app Code
+			var mmcdate1 = new Date(getmmcdate1);
+			var convertdata1 = mmcdate1.getTime();
+			var mmcdate2 = new Date(getmmcdate2);
+			var convertdata2 = mmcdate2.getTime();
+			var appmmcurl = convertdata1 + "||" + convertdata2 + "||" + getmmctitle +
+				"||www.nykaa.com||" + getmmcdesc + "||";
+			document.getElementById("mmcappurlresult").innerHTML = appmmcurl;
+
+		}
+		else{
+			alert("Please Fill all the details!")
+		}
+
+		
+	
+		
+	})
+});
+
+</script> -->
+
+
+	<div id="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Webcom Dashboard</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/stylenew.css">	
+	<script src="js/jquery-3.7.0.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<style>
+		/* Hide scrollbar for Chrome, Safari and Opera */
+		#dashboard-sec::-webkit-scrollbar {
+			display: none;
+		}
+	
+		/* Hide scrollbar for IE, Edge and Firefox */
+		#dashboard-sec{
+			-ms-overflow-style: none;
+			/* IE and Edge */
+			scrollbar-width: none;
+			/* Firefox */
+		}
+	</style>
+  </head> 
+<body>
+	<div id="header">FAQ</div>
+	<div id="nav">
+		<a href="index.html" title="Dashboard">
+			<span class="material-symbols-outlined" class="dash-lock">
+				home
+			</span></a>
+		<a href="about.html" title="About Us">
+			<span class="material-symbols-outlined">
+				person_search
+			</span></a>
+	</div>
+
+	<div id="dashboard-sec">
+		<div id="main-container-faq">
+			<div class="faq-container">
+				<div class="Faq-title"><p>Can We Create A Page Having "Nykaa" As Page Data?</p><span class="unwrip">&plus;</span></div>
+				<div class="Faq-desc">No, Nykaa Keywork does not Randring on the iOS Devices. Kindly Reconfirm the same before proceeding.</div>
+			</div>
+			<div class="faq-container">
+				<div class="Faq-title"><p>Is it mandatory to update correct & accurate Analytical Title?</p><span class="unwrip">&plus;</span></div>
+				<div class="Faq-desc">Yes, This would assist in pulling out correct foorprints for individual tile.</div>
+			</div>
+			<div class="faq-container">
+				<div class="Faq-title"><p>Can we use segments on desktop?</p><span class="unwrip">&plus;</span></div>
+				<div class="Faq-desc">No, currently Segments Works Only on App & Mweb.</div>
+			</div>
+			<div class="faq-container">
+				<div class="Faq-title"><p>How to add rupee sign while uploding bulk csv files?</p><span class="unwrip">&plus;</span></div>
+				<div class="Faq-desc">You have to use ( <b>â‚¹</b> ) instead of rupee Sign.</div>
+			</div>
+			<div class="faq-container">
+				<div class="Faq-title"><p>How to make hybrid for Luxe Brands?</p><span class="unwrip">&plus;</span></div>
+				<div class="Faq-desc">You will need to create hybrid on the following page type desktop-category-listing, mweb-category-listing, app-category-listing & ultra_lux-app-category-listing.</div>
+			</div>
+			<div class="faq-container">
+			<div class="Faq-title"><p>Which App link data needs to be selected for CMS Gift Card</p><span class="unwrip">&plus;</span></div>
+			<div class="Faq-desc">For Example: https://www.nykaa.com/giftcard/list this url is a cms link hence we will select the option of landing page.</div>
+			</div>
+			<div class="faq-container">
+				<div class="Faq-title"><p>How to create URL for CMS page?</p><span class="unwrip">&plus;</span></div>
+				<div class="Faq-desc">Kindly connect with UI Team for URL of CMS Page.</div>
+			</div>
+			<div class="faq-container">
+				<div class="Faq-title"><p>What will be the App link data for Gamezone/Spin The Wheel</p><span class="unwrip">&plus;</span></div>
+				<div class="Faq-desc">For Example: https://www.nykaa.com/spin-the-wheel-app/lp this url is a cms link hence we will select the option of landing page.</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+	
+	<script>
+		$(document).ready(function () {
+			$(".unwrip").click(function () {
+				$(this).parent().next('.Faq-desc').toggle(1000);
+			});
+		});
+	</script>
+	<div id="footer"></div>
+</body>
+</html>

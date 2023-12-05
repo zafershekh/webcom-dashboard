@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Webcom Dashboard</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/stylenew.css">
+	<script src="js/jquery-3.7.0.min.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+	<div id="header">Pids Separation</div>
+	<div id="nav">
+		<a href="index.html" title="Dashboard">
+			<span class="material-symbols-outlined" class="dash-lock">
+				home
+			</span></a>
+		<a href="about.html" title="About Us">
+			<span class="material-symbols-outlined">
+				person_search
+			</span></a>
+	</div>
+
+	<div id="dashboard-sec">
+
+
+		<div class="main_contener" style="padding-left:100px;">
+			<span class="textbox_title">Enter Pids</span>
+			<textarea id="piddata" class="textarea_design"
+				style="width:300px; height:300px; font-size:15px;"></textarea>
+		</div>
+		<div class="main_contener">
+			<select id="select-sup" class="dropdownselectiontop" style="width: 70px; font-weight: bolder; position: relative; top:-150px;">
+				<option>,</option>
+				<option>-17,</option>
+			</select>
+			<input type="submit" id="getpid" style="position: relative; top:-110px;" class="designbtn"
+				value="Get Pids" />
+		</div>
+		<div class="main_contener">
+			<span class="textbox_title">Result</span>
+			<textarea disabled class="textarea_design" id="pidsresult"
+				style="width:300px; height:300px; font-size:15px;"></textarea>
+		</div>
+
+	</div>
+
+	<div id="footer"></div>
+
+
+</body>
+
+</html>
