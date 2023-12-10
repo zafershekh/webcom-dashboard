@@ -30,10 +30,11 @@ Locate inventory items swiftly by utilizing the Brand Inventory Finder, which ca
 Technologies Used
 This toolbox is built using the following technologies:
 
-HTML
-JavaScript
-jQuery
-CSS
+1. HTML
+2. JavaScript
+3. jQuery
+4. CSS
+
 How to Contribute
 Feel free to contribute to the development of this toolbox by forking the repository, making improvements, and submitting pull requests. Your collaboration is highly appreciated!
 
