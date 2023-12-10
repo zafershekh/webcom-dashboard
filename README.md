@@ -1,5 +1,5 @@
-# webcom-dashboard
-Team Productivity Toolbox
+
+# WEBCOM Team Productivity Webappliction Tool
 Welcome to our Team Productivity Toolbox GitHub repository! 🚀
 
 Introduction
@@ -34,6 +34,7 @@ HTML
 JavaScript
 jQuery
 CSS
-
+How to Contribute
+Feel free to contribute to the development of this toolbox by forking the repository, making improvements, and submitting pull requests. Your collaboration is highly appreciated!
 
 Thank you for checking out our Team Productivity Toolbox. I hope it proves as beneficial to your team as it has been for ours! 🛠️
