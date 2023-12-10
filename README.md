@@ -1,6 +1,6 @@
 
-# WEBCOM Team Productivity Webappliction Tool
-Welcome to our Team Productivity Toolbox GitHub repository! 🚀
+# WEBCOM Team Productivity Web Appliction Tool
+Welcome to our Team Productivity Web Application Tool GitHub repository! 🚀
 
 Introduction
 
