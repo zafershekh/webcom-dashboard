@@ -45,4 +45,4 @@ Technologies Used
 3. jQuery
 4. CSS
 
-Thank you for checking out our Team Productivity Toolbox. I hope it proves as beneficial to your team as it has been for ours! 🛠️
+Thank you for checking out our Team Productivity Toolbox.🛠️
