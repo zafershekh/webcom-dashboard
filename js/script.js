@@ -95,11 +95,16 @@ $(document).ready(function () {
 		var getdeskurl = $("#deskurldata").val();
 		var spilturlsingle = getdeskurl.split("\n");
 		var urllength = spilturlsingle.length;
+		let wrongurl ="";
+		let flagtest = false;
 		urlcomplitedata = "";
 		for (var i = 0; i < urllength; i++) {
 			var urlsup = spilturlsingle[i];
 			var spilturldata = urlsup.split("/");
-			if (spilturldata[3] == "sp") {
+			if(spilturldata == ""){
+				continue;
+			}
+			else if (spilturldata[3] == "sp") {
 				// alert("Coming Soon!, Thank");
 				// document.getElementById("bulkurlresult").innerHTML = getdeskurl;
 				var title = spilturldata[5].replace(/-/g," ");
@@ -113,11 +118,14 @@ $(document).ready(function () {
 
 			}
 			else {
-				alert("Hybrid/CMS Page Not Supported.");
+				wrongurl += spilturlsingle[i]+"\n";
+				flagtest = true;
 			}
 			document.getElementById("bulkurlresult").innerHTML = urlcomplitedata;
 		}
-		
+		if (flagtest == true){
+			alert("Hybrid/CMS Page Not Supported.\n"+ wrongurl);
+		}
 
 	});
 
