@@ -23,7 +23,7 @@ $(document).ready(function () {
 			text = pid[i];
 
 			data += '\n"' + text + '": {';
-			data += '\n"segments": ["' + getsegment + '"]' + "\n";
+			data += '\n"filter_tags": ["' + getsegment + '"]' + "\n";
 			if (test == count) {
 				data += "   }" + "\n";
 			}
